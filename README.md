@@ -1,5 +1,5 @@
 # WMS 3.0
-# THIS IS A WIP SCRIPT AND IS STILL BEING DEVELOPED AT THIS TIME
+THIS IS A WIP SCRIPT AND IS STILL BEING DEVELOPED AT THIS TIME
 Website Management Software
 
 WMS version 3.0.0 is designed to replace the difficult PHP back end for web developers and allow them to focus on what they do best - Make pretty websites. With WMS you can create template files in html and inject variables into them on runtime with ease by simply calling `%%VAR1%%` and incrementing the 1 up to add multiple variables. This also allows variables to be reused with easy, along with templates.
