@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="%%LANG_HTML%%">
+<head>
+<meta charset="%%LANG_CHARSET%%">
+<title>Error &mdash; %%VAR1%%</title>
+<meta name="description" content="%%VAR2%%">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fafafa">
+<link rel="canonical" href="%%CANONICAL%%">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+<link rel="shortcut icon" type="image/x-icon" href="%%DOMAIN%%/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="%%DOMAIN%%/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="%%DOMAIN%%/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="%%DOMAIN%%/favicon-16x16.png" sizes="16x16">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&amp;display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" crossorigin="anonymous">
+<style>
+html,body{height:100%;width:100%;border:0;padding:0;margin:0;}
+body{background-color:#EEE;color:#222;font-size:16px;font-family:sans-serif;}
+.clear{clear:both;}
+main{height:100%;padding:0;margin:0;display:flex;align-items:center;justify-content:center;}
+main .container{width:80%;max-width:600px;}
+main .container .flex{width:100%;font-size:16px;text-align:center;}
+main .container .flex .error_code{position:relative;height:220px;}
+main .container .flex .content h1{font-family:"Kanit",sans-serif;position:absolute;left:50%;top:50%;-webkit-transform: translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);font-size:186px;font-weight:200;margin:0;background:linear-gradient(130deg,#ffa34f,#ff6f68);background-clip:border-box;color:transparent;-webkit-background-clip:text;background-clip:text;text-transform:uppercase;}
+main .container .flex .content h2{font-family:"Kanit",sans-serif;font-size:33px;font-weight:200;text-transform:uppercase;margin-top:0;margin-bottom:25px;letter-spacing:3px;}
+main .container .flex .content p{font-family:"Kanit",sans-serif;font-size:16px;font-weight:200;margin-top:0;margin-bottom:25px;}
+main .container .flex .content a{font-family:font-family:"Kanit",sans-serif;color:#ff6f68;font-weight:200;text-decoration:none;border-bottom:1px dashed #ff6f68;border-radius:2px;}
+main .container .flex .socials a{color:#ff6f68;font-weight:200;text-decoration:none;display:inline-block;height:40px;line-height:40px;width:40px;font-size:16px;color: #ff6f68;margin:3px;-webkit-transition:0.2s all;transition:0.2s all;}
+@media only screen and (max-width:600px){main .container .flex .content h1{font-size:168px;}main .container .flex .content h2{font-size:22px;}}
+</style>
+<link rel="manifest" href="%%DOMAIN%%/site.webmanifest">
+<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+</head><body><main><div class="container"><div class="flex">
+<div class="content"><div class="error_code"><h1>%%VAR3%%</h1></div><h2>%%VAR4%%</h2><p>%%VAR2%% <a href="%%DOMAIN%%/" title="<lang:generic->return_home>"><lang:generic->return_home></a></p></div>
+<div class="socials">%%SOCIALS%%</div>
+</div></div></main></body></html>

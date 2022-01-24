@@ -1,0 +1,118 @@
+/**
+ *                 ________  __      __  _________
+ *                 \______ \/  \    /  \/   _____/
+ *                   |    |  \   \/\/   /\_____  \ 
+ *                   |    `   \        / /        \
+ *                  /_______  /\__/\  / /_______  /
+ *                          \/      \/          \/ 
+ *             WMS - Website Management Software (c) 2022
+ *                      by Direct Web Solutions
+ * 
+ * Default stylesheets
+ *
+ *   Edit this sheet to add your own user defined styles to build your templates
+ *   on. You can also use bootstrap styles instead of these templates with the
+ *   bootstrap addon module to build bootstrap templates instead.
+ *
+ *   Table of Contents:
+ * -----------------------------------------------------------------------------
+ *
+ *   1). Basic layout items
+ *   2). Header
+ *   3). Navigation
+ *   4). Main - General layout
+ *   5). Footer & Copyright
+ *
+ * -----------------------------------------------------------------------------
+ * @category    User Defined
+ * @package     WMS Panel
+ * @license     https://www.directwebsolutions.ca/wms/v3/license 3.0+ License
+ * @version     Release: 3.0.0
+ */
+
+/*  
+    1). Basic layout items 
+*/
+html,body{padding:0;margin:0;background:#393D3F;color:#fff;font-family:'Open Sans',sans-serif;font-size:14px;font-weight:400;}
+.clear, .clearfix{clear:both;}
+.update_banner{font-size:16px;background:#bb3434;color:#fff;padding:10px 20px;text-align:center;}
+
+/*  
+    2). Header
+*/
+header{display:block;width:100%;border-top:3px solid #134c6c;background:#fff;color:#222;}
+header .container{width:100%;max-width:1120px;margin:0 auto;}
+header .container .padding{padding:20px;}
+header .container .padding .logo_section{padding-top:3px;}
+header .container .padding .logo_section .board_title{font-family:'Montserrat',sans-serif;float:left;font-weight:300;font-size:20px;padding-top:9px;padding-left:15px;}
+header .container .padding .logo_section .board_logo{float:left;width:40px;height:auto;}
+header .container .padding .logo_section .board_logo img{width:100%;height:auto;}
+header .container .padding .logout{float:right;margin-top:5px;}
+header .container .padding .logout a{display:inline-block;padding:9px;border-radius:6px;border:1px solid #ccc;color:#ccc;text-decoration:none;transition:0.3s;}
+header .container .padding .logout a:hover{transition:0.3s;}
+header .container .padding .logout a.prev:hover{color:#6a8be6;border-color:#6a8be6;}
+header .container .padding .logout a.log:hover{color:#b32027;border-color:#b32027;}
+
+/*  
+    3). Navigation
+*/
+navigation{user-select:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;position:relative;display:block;width:100%;background-color:#fff;box-sizing:border-box;z-index:300;}
+navigation .container{width:100%;max-width:1120px;margin:0 auto;}
+navigation .language_selection{float:right;margin-top:5px;font-size:16px;padding-right:20px;}
+navigation .language_selection select{font-size:16px;margin:0;width:120px;padding:5px 35px 5px 5px;font-size:16px;border:1px solid #CCC;height:34px;-webkit-appearance:none;-moz-appearance:none;appearance:none;background:url("lang.png") 96% / 15% no-repeat #fff;}
+navigation .language_selection select::-ms-expand{display:none;}
+@media screen and (min-width:0\0){navigation .language_selection select{background:none\9;padding:5px\9;}}
+navigation .menu{display:none;color:#666;text-align:center;padding:14px 16px;text-decoration:none;cursor:pointer;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+navigation ul{color:#666;border:1px solid #ccc;border-left:none;border-right:none;list-style-type:none;margin:0;padding:0;overflow:hidden;}
+navigation ul li{top:-1px;float:left;text-align:center;}
+navigation ul li i{width:25px;}
+navigation ul li a{display:block;color:#666;text-align:inherit;padding:14px 16px;text-decoration:none;}
+navigation ul li ul{display:none;position:absolute;top:100%;margin-top:-1px;background:#fff;border:1px solid #ccc;border-radius:0 0 4px 4px;}
+navigation ul li ul li{float:none;display:block;}
+navigation ul li ul li a{text-align:left;}
+navigation ul li .active{color:white;background-color:#88AADD;}
+navigation ul li:hover:not(.active){background-color:#f2fafc;}
+navigation ul li:hover ul li:hover{background-color:#f2fcf9;}
+@media screen and (min-width:872px){
+    navigation ul li:hover ul{display:block;}
+}
+@media screen and (max-width:871px){
+    navigation .language_selection{margin-bottom:6px;float:none;text-align:center;padding-right:0;}
+    navigation .menu{display:block;}
+    navigation .showblock{display:block;}
+    navigation ul{z-index:400;display:none;position:absolute;top:100%;left:0px;box-sizing:border-box;background:#fff;border:1px solid #000;border-top:none;width:100%;border-radius:0 0 4px 4px;}
+    navigation ul li{width:100%;display:block;text-align:left;}
+    navigation ul li ul{display:none;position:relative;background:#fff;border:none;border-radius:0;}
+    navigation ul li ul li{padding-left:30px;}
+}
+
+/*  
+    4). Main - General layout
+*/
+main{display:block;width:100%;background:#ecf0f5;color:#222;}
+main .showblock{display:block;}
+main .center{text-align:center;}
+main .error_page_link{transition:0.3s;display:inline-block;padding:10px;border:1px solid #bf5d0d;clear:both;margin-top:10px;text-decoration:none;color:#bf5d0d;border-radius:5px;}
+main .error_page_link:hover{transition:0.3s;color:#88AADD;border-color:#88AADD;}
+main .highlighted{color:#eb548e;background:#f2f2f2;padding:2px 4px;font-size:14px;}
+main .container{width:100%;max-width:1120px;margin:0 auto;}
+main .container .padding{padding:20px;}
+main .container .padding .page_title{font-size:20px;font-family:'Montserrat',sans-serif;font-weight:300;padding:0;}
+main .container .padding .rowblock{margin-top:10px;border:1px solid #ccc;border-top:3px solid #88AADD;background:#fff;border-radius:4px;}
+main .container .padding .extra_top_padding{margin-top:30px;}
+main .container .padding .rowblock .title{padding:10px;border-bottom:1px solid #ccc;}
+main .container .padding .rowblock .row_content_padding{padding:15px;}
+
+/*  
+    5). Footer & Copyright
+*/
+footer{position:relative;z-index:1;display:block;width:100%;font-size:11px;color:#ccc;}
+footer a{color:#ccc;font-weight:bold;text-decoration:none;transition:0.3s;}
+footer a:hover{color:#fff;text-decoration:underline;transition:0.3s;}
+footer .container{width:100%;max-width:1120px;margin:0 auto;}
+footer .container .padding{padding:20px;}
+footer .container .padding .time_code{float:right;}
+@media screen and (max-width:600px){
+    footer .container{text-align:center;padding-bottom:13px;}
+    footer .container .padding .time_code{position:absolute;bottom:13px;float:none;width:100%;left:0;}
+}

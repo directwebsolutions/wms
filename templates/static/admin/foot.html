@@ -1,0 +1,25 @@
+<footer>
+<div class="container">
+<div class="padding">
+<div class="time_code"><span style="font-weight:bold"><lang:generic->current_time></span>: %%VAR2%%</div>
+<lang:generic->powered_by> <a href="https://directweb.solutions/wms/" title="Find out more about WMS Portal from Direct Web Solutions" target="_blank">WMS</a>, &copy; 2018-%%YEAR%% Direct Web Solutions.
+</div>
+</div>
+</footer>
+<!-- Footer Script Loading -->
+<script src="%%ASSET_DOMAIN%%/javascript/jquery-3.6.0.min.js"></script>
+%%VAR1%%<script>
+$(document).ready(function(){
+    $(".menu").on("click", function(e){
+        $("#nav_menu").toggleClass("showblock");
+    });
+    $("ul li").click(function() {
+        if ($(this).closest("li").children("ul").length) {
+            $(this).closest("li").children("ul").toggleClass("showblock");
+        }
+    });
+});
+</script>
+<!-- End of Footer Script Loading -->
+</body>
+</html>

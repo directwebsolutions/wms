@@ -1,0 +1,58 @@
+/**
+ *                 ________  __      __  _________
+ *                 \______ \/  \    /  \/   _____/
+ *                   |    |  \   \/\/   /\_____  \
+ *                   |    `   \        / /        \
+ *                  /_______  /\__/\  / /_______  /
+ *                          \/      \/          \/
+ *             WMS - Website Management Software (c) 2022
+ *                      by Direct Web Solutions
+ *
+ * Default stylesheets
+ *
+ *   Edit this sheet to add your own user defined styles to build your templates
+ *   on. You can also use bootstrap styles instead of these templates with the
+ *   bootstrap addon module to build bootstrap templates instead.
+ *
+ *   Table of Contents:
+ * -----------------------------------------------------------------------------
+ *
+ *   1). Basic layout items
+ *   2). Login styling for prebuilt login boxes and login.php
+ *   3). Main
+ *
+ * -----------------------------------------------------------------------------
+ * @category    User Defined
+ * @package     WMS User Website
+ * @license     https://www.directwebsolutions.ca/wms/v3/license 3.0+ License
+ * @version     Release: 3.0.0
+ */
+
+/*
+    1). Basic layout items
+*/
+html,body{padding:0;margin:0;color:#222;background:#EEE;font-family:'Open Sans',sans-serif;font-size:14px;font-weight:400;}
+.clear, .clearfix{clear:both;}
+#wrapper{width:100%;position:relative;}
+
+/*
+    2). Login styling for prebuilt login boxes and login.php
+*/
+.small_login_box{max-width:300px;border:1px solid #444;padding:0 12px;}
+.small_login_box .input_row{width:100%;box-sizing:border-box;padding:12px 0;}
+.small_login_box .input_row .row_title{padding-bottom:5px;}
+.small_login_box .input_row .input{font-size:16px;width:100%;box-sizing:border-box;}
+.small_login_box .input_row .input input[type="text"],
+.small_login_box .input_row .input input[type="password"]{font-size:16px;width:100%;box-sizing:border-box;padding:10px;border:1px solid #888;outline:0;border-radius:4px;}
+.small_login_box .input_row .input label{cursor:pointer;padding-left:10px;}
+.small_login_box .login_button{appearance:none;background-color:#FAFBFC;border:1px solid rgba(27,31,35,0.15);border-radius:6px;box-shadow:rgba(27,31,35,0.04) 0 1px 0,rgba(255,255,255,0.25) 0 1px 0 inset;box-sizing:border-box;color:#24292E;cursor:pointer;display:inline-block;font-family:-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";font-size:16px;font-weight:500;line-height:20px;list-style:none;padding:6px 16px;position:relative;transition:background-color 0.2s cubic-bezier(0.3,0,0.5,1);user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;touch-action:manipulation;vertical-align:middle;white-space:nowrap;word-wrap:break-word;}
+.small_login_box .login_button:hover{background-color:#F3F4F6;text-decoration:none;transition-duration:0.1s;}
+.small_login_box .login_button:disabled{background-color:#FAFBFC;border-color:rgba(27,31,35,0.15);color:#959DA5;cursor:default;}
+.small_login_box .login_button:active{background-color:#EDEFF2;box-shadow:rgba(225,228,232,0.2) 0 1px 0 inset;transition:none 0s;}
+.small_login_box .login_button:focus{outline:1px transparent;}
+.small_login_box .login_button:before{display:none;}
+.small_login_box .login_button:-webkit-details-marker{display:none;}
+
+/*
+    3). Main
+*/
